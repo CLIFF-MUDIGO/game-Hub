@@ -61,7 +61,7 @@ function App() {
             <Slider {...settings}>
               {games.map(game => (
                 <div key={game.id} className="slider-item">
-                  <img src={game.background_image} alt={game.name} style={{ width: "200%" }} />
+                  <img src={game.background_image} alt={game.name} style={{ width: "70%" }} />
                   <h3>{game.name}</h3>
                 </div>
               ))}
@@ -79,6 +79,7 @@ function App() {
           <p>Follow us on Instagram:</p>
           <a href="https://el._smash" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
+            <span>el._smash</span>
           </a>
         </section>
       </main>
