@@ -5,7 +5,7 @@ function Search() {
   const [searchResults, setSearchResults] = useState([]);
 
   function handleSearch(e) {
-    e.preventDefault();
+    e.preventDefault();//prevent loading
 
     const searchInput = e.target.elements.searchInput.value;
 
@@ -22,7 +22,7 @@ function Search() {
     <div className={styles['search-container']}>
       <form onSubmit={handleSearch} className={styles['search-form']}>
         <label>
-          Search for a game:
+          Search for games:
           <input type="text" name="searchInput" className={styles['search-input']} />
         </label>
         <button type="submit" className={styles['search-button']}>Search</button>
