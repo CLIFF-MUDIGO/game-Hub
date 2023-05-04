@@ -1,12 +1,9 @@
-# Name of the Project
-*****
-### Author : Name Date
-****
-## Project Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+# GAME-HUB
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-******
+### Author : Name Date
+CLIFF MUDIGO,SHEILA SERUYA,FREDRICK MWANGI,REGINA MUMBI
+## Project Description
+this project is a web application that displays a list of popular games using the RAWG video games database API. The app displays the games' titles, release dates, and ratings. Users can click a button to show or hide the list of games. Additionally, they can add games to their favorites and remove them from their favorites list. The app also has a review feature that allows users to write reviews for the games and see other users' reviews. The app uses React for the frontend and CSS for styling.
 
 ## SCREENSHOTS
 https://github.com/CLIFF-MUDIGO/game-Hub/issues/5
