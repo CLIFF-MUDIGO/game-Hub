@@ -3,17 +3,20 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './App.css';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Reviews from "./Reviews";
+import GamePage from './Gamepage';
 
 function App() {
   const [games, setGames] = useState([]);
+
   useEffect(() => {
     fetch(`https://api.rawg.io/api/games?key=72255820f866438197617e0ae9a982cc`)
       .then(response => response.json())
       .then(data => setGames(data.results));
   }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -23,6 +26,7 @@ function App() {
     autoplay: true,
     autoplaySpeed: 5000
   };
+
   return (
     <div className="app">
       <header>
@@ -72,16 +76,17 @@ function App() {
         </section>
         <section className="about" id="about">
           <h2>About us</h2>
-          <p>We are a team of passionate gamers who love to share our experience and knowledge with fellow gamers. Our goal is to create a community where gamers can connect, share and learn from one another. </p>
         </section>
         <section className="contact" id="contact">
           <h2>Contact us</h2>
           <p>Follow us on Instagram:</p>
-          <a href="https://el._smash" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/el._smash/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
             <span>el._smash</span>
           </a>
         </section>
+        <GamePage />
+        <Reviews />
       </main>
       <footer>
         <p>© 2023 Game Website. All Rights Reserved.</p>
@@ -89,4 +94,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
