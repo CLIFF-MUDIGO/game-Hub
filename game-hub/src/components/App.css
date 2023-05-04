@@ -31,18 +31,18 @@
     padding: 20px;
   }
   
-  .hero {
+  .home {
     text-align: center;
     padding: 100px 0;
     background-color: #f2f2f2;
   }
   
-  .hero h2 {
+  .home h2 {
     font-size: 36px;
     margin-bottom: 20px;
   }
   
-  .hero p {
+  .home p {
     font-size: 24px;
     margin-bottom: 40px;
   }
