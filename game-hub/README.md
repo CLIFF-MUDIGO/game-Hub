@@ -9,17 +9,17 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 ******
 
 ## SCREENSHOTS
-- link 1
-- link 2
+https://github.com/CLIFF-MUDIGO/game-Hub/issues/5
+
 
 
 ********
 ## SetUp Instruction
 ### Requirements
-* [Lang](lang Url)
+* [React.js](react.com)
 * [Framework](Framework URL)
 * Text editor eg [Visual Studio Code](https://code.visualstudio.com/download)
-* [Testing Platform](Platform URL)
+
 
 
 ### Getting Files
@@ -44,21 +44,23 @@ Then run server with the above command
 Or you can access the web application directly via this [LINK.](link.com/)
 *****
 ## Dependencies
-- Package Name
-- Package Name
-- Package Name
-- Package Name
+- Youtube
+- Google
+- React dev
+- Fontawesome
 *****
 ## Technologies Used
 1. HTML
-2. MdBootstrap
-3. HTML
+2. REACT.JS
+3. REACTDOM
 4. CSS
 5. JavaScript
 *****
 ## Contact Information
-* Email : example@gmail.com
-*****
+* Email : cmudigo5@gmail.com
+          fredrick.mwangi01@student.moringaschool.com
+          regina.mumbi@student.moringaschool.com
+          sheila.mbalo@student.moringaschool.com
 ## [License](LICENSE)
 MIT License
-Copyright (c) YEAR Author
+Copyright (c) 2023 CLIFF MUDIGO,FREDRICK MWANGI,SHEILA SERUYA,REGINA MUMBI.
