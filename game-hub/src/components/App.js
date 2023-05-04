@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Reviews from "./Reviews";
 import GamePage from './Gamepage';
+import Search from './Searchresults';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -21,7 +22,7 @@ function App() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000
@@ -55,17 +56,18 @@ function App() {
         </nav>
       </header>
       <main>
+     
         <section className="home" id="home">
           <h2>Welcome to our game website</h2>
           <p>Discover new games, read reviews, and join the gaming community.</p>
-          <button>Explore</button>
+          <Search />
         </section>
         <section className="slider-container" id="games">
           {games.length > 0 ?
             <Slider {...settings}>
               {games.map(game => (
                 <div key={game.id} className="slider-item">
-                  <img src={game.background_image} alt={game.name} style={{ width: "70%" }} />
+                  <img src={game.background_image} alt={game.name} style={{ width: "100%" }} />
                   <h3>{game.name}</h3>
                 </div>
               ))}
@@ -75,8 +77,14 @@ function App() {
           }
         </section>
         <section className="about" id="about">
-          <h2>About us</h2>
-        </section>
+  <h2>About Us</h2>
+  <p>Welcome to our gaming community! We are passionate gamers who love to connect with others and share our experiences.</p>
+  <p>At our core, we believe that gaming is more than just a hobby - it's a way of life. It brings people from all walks of life together, and creates lasting memories and friendships that can last a lifetime. We're excited to be a part of this amazing community, and we can't wait to see what the future holds.</p>
+</section>
+
+     
+        <GamePage />
+        <Reviews />
         <section className="contact" id="contact">
           <h2>Contact us</h2>
           <p>Follow us on Instagram:</p>
@@ -85,8 +93,7 @@ function App() {
             <span>el._smash</span>
           </a>
         </section>
-        <GamePage />
-        <Reviews />
+        
       </main>
       <footer>
         <p>© 2023 Game Website. All Rights Reserved.</p>

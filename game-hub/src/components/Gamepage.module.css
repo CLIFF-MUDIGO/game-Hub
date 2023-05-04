@@ -1,0 +1,73 @@
+.game-page {
+    padding: 1rem;
+  }
+  
+  .explore-button {
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .game-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    max-width: 300px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .favorite-button {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background-color: yellow;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .favorite-game-card {
+    background-color: lightblue;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    max-width: 300px;
+    padding: 1rem;
+    text-align: center;
+  }
+  

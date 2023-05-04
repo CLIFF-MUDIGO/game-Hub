@@ -1,23 +1,19 @@
 import React from 'react';
-import './GameList.css';
+import GameCard from './GameCard';
 
-function GameList(props) {
-  const games = props.games;
-
+const GameList = ({ games }) => {
   return (
     <div className="game-list">
-      <h2>Popular Games</h2>
+      <h2>Game List</h2>
       <ul>
-        {games.map(game => (
+        {games.map((game) => (
           <li key={game.id}>
-            <img src={game.background_image} alt={game.name} />
-            <h3>{game.name}</h3>
-            <p>{game.rating}</p>
+            <GameCard game={game} />
           </li>
         ))}
       </ul>
     </div>
   );
-}
+};
 
 export default GameList;
