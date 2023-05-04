@@ -45,13 +45,16 @@ Or you can access the web application directly via this [LINK.](link.com/)
 - Google
 - React dev
 - Fontawesome
-*****
+-react-router-dom
+-React modal
+-REACTDOM
+
 ## Technologies Used
 1. HTML
-2. REACT.JS
-3. REACTDOM
-4. CSS
-5. JavaScript
+2. REACT.JS 
+3. CSS
+4. JavaScript
+
 *****
 ## Contact Information
 * Email : cmudigo5@gmail.com
