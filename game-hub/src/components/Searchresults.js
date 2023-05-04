@@ -1,4 +1,5 @@
-import {useState}from 'react'
+import React, { useState } from 'react';
+import styles from './Search.module.css';
 
 function Search() {
   const [searchResults, setSearchResults] = useState([]);
@@ -8,7 +9,6 @@ function Search() {
 
     const searchInput = e.target.elements.searchInput.value;
 
-    // Make the search request to the API
     fetch(`https://api.rawg.io/api/games?key=72255820f866438197617e0ae9a982cc&search=${searchInput}`)
       .then(response => response.json())
       .then(data => {
@@ -19,13 +19,13 @@ function Search() {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSearch}>
+    <div className={styles['search-container']}>
+      <form onSubmit={handleSearch} className={styles['search-form']}>
         <label>
           Search for a game:
-          <input type="text" name="searchInput" />
+          <input type="text" name="searchInput" className={styles['search-input']} />
         </label>
-        <button type="submit">Search</button>
+        <button type="submit" className={styles['search-button']}>Search</button>
       </form>
       <ul>
         {searchResults.map(game => (
@@ -36,4 +36,4 @@ function Search() {
   );
 }
 
-export default Search
+export default Search;
