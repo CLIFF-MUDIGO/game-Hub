@@ -87,6 +87,7 @@ function App() {
         </section>
         <GamePage />
         <Reviews />
+        
       </main>
       <footer>
         <p>© 2023 Game Website. All Rights Reserved.</p>
