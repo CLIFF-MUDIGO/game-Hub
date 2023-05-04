@@ -16,7 +16,7 @@ function Reviews() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = { userName: userName, comment: comment };
+    const formData = { userName: userName, comment: comment, timestamp: new Date() };
     const dataArray = [...submittedData, formData];
     setSubmittedData(dataArray);
     setUserName("");
@@ -24,10 +24,12 @@ function Reviews() {
   }
 
   const listOfSubmissions = submittedData.map((data, index) => {
+    const timestamp = new Date(data.timestamp).toLocaleString();
     return (
-      <div key={index}>
+      <div key={index} className={Styles.commentContainer}>
         <h4>{data.userName}:</h4>
         <p>{data.comment}</p>
+        <span className={Styles.timestamp}>{timestamp}</span>
       </div>
     );
   });
@@ -61,8 +63,6 @@ function Reviews() {
         </form>
         
         <div id="comments">{listOfSubmissions}</div>
-      
-
       </main>
     </div>
   );

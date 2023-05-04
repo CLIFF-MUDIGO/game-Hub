@@ -1,5 +1,5 @@
 .body {
-    background-image: url(https://wallpapers.com/images/hd/cyberpunk-among-us-8k-gaming-ghmoma2djle33mtt.jpg);
+    background-image: url(https://images4.alphacoders.com/289/2898.jpg);
     background-size: cover;
     height: 1000PX;
     background-position: center;
@@ -32,7 +32,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label {
-  color: #f5c518;
+  color: #f5c518fe;
 }
 
 main {
@@ -81,16 +81,34 @@ button[type="submit"]:hover {
 h4 {
   font-size: 24px;
   font-weight: bold;
-  margin: 30px 0 10px 0;
-  color: #f53d18;
-  background-color: rgb(0, 0, 255);
+  margin: 30px;
+  color: #722626;
+  background-color: rgba(161, 239, 251, 0.573);
   border-radius: 50px;
 }
 
 p {
   font-size: 18px;
   margin: 0;
-  background-color: #ca8071;
+  background-color: #faccf23e;
   font-size: 30px;
   border-radius: 10px;
 }
+
+.commentContainer {
+  border: 6px solid #000000;
+  border-width: 3px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+} 
+
+
+.timestamp {
+  font-size: 19px;
+  color: #bd2745;
+  background-color:rgba(149, 248, 0, 0.396);
+  border-radius: 30px;
+}
+
