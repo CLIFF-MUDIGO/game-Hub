@@ -1,0 +1,40 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #F0F0F0;
+}
+.review-form-container {
+  width: 100%;
+}
+.review-form-container h3 {
+  margin-top: 0;
+}
+.review-form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+.review-form-container input,
+.review-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+}
+.review-form-container button[type="submit"] {
+  display: block;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.review-form-container button[type="submit"]:hover {
+  background-color: #00688B;
+  font-size: 1.1em;
+}
